@@ -13,8 +13,6 @@ $logs = @()
 
 Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" | 
 
-select -first 100 |
-
 where-object {$_.id -eq [int]$EventCode } | 
 
 # Parse the message field using regex to turn each unparsed key value pair in the message field into a property value pair in a new object
