@@ -1,5 +1,5 @@
 # Symon2CSV
- PowerShell script that parses the message field Sysmon logs and converts them to a well-formatted CSV 
+ PowerShell script that parses Sysmon logs (specifically the "message" field) and converts them to a well-formatted CSV 
 
  My original objective was to perform data analysis on Windows Sysmon logs collected on my local machine in python with the logs in a Data Frame. The issue however was that the majority of useful information in Sysmon logs is contained within the "message" field and they are natively unparsed, so when sysmon logs are exfilled, all that information was jammed into one field. To tackle this problem I developed a short PowerShell script to do the following:
 
